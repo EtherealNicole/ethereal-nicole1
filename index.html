@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethereal Nicole</title>
+  <style>
+    :root {
+      --bg: #100c18;
+      --panel: #1c1428;
+      --purple: #b99aff;
+      --text: #f4efff;
+      --muted: #b8abc9;
+      --border: #38294c;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 34px 20px;
+      text-align: center;
+      background: radial-gradient(ellipse at top, #39234f, #100c18 72%);
+      border-bottom: 1px solid var(--border);
+    }
+
+    header .stars { color: var(--purple); letter-spacing: 9px; }
+    h1 { font-size: clamp(2.3rem, 7vw, 4.5rem); margin: 8px 0; }
+    header p { color: var(--muted); margin: 0; }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px;
+      background: #171020;
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 20px;
+    }
+
+    nav a:hover, nav a:focus-visible { background: #39234f; color: var(--purple); }
+
+    main { max-width: 1000px; margin: auto; padding: 25px 18px; }
+    section { padding: 35px 0; scroll-margin-top: 80px; }
+    h2 { color: var(--purple); font-size: 1.8rem; }
+    h3 { margin-top: 0; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 20px;
+    }
+
+    .card p { color: var(--muted); }
+
+    button, input, textarea, select {
+      font: inherit;
+      border-radius: 9px;
+      padding: 10px 12px;
+    }
+
+    button {
+      cursor: pointer;
+      border: 1px solid #8063ad;
+      background: #38234f;
+      color: var(--text);
+    }
+
+    button:hover { background: #52356f; }
+
+    input, textarea, select {
+      width: 100%;
+      background: #100c18;
+      color: var(--text);
+      border: 1px solid var(--border);
+      margin: 7px 0 12px;
+    }
+
+    textarea { min-height: 120px; resize: vertical; }
+    label { color: var(--muted); }
+    .small { font-size: .9rem; color: var(--muted); }
+
+    .entry {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      padding: 12px;
+      background: #100c18;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 30px 16px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="stars" aria-hidden="true">✦ ☾ ✧ ★ ✧ ☽ ✦</div>
+    <h1>Ethereal Nicole</h1>
+    <p>A little universe for creativity, curiosity, and becoming.</p>
+    <p class="small">Art • Words • Science • Music • Dreams</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#art">Art</a>
+    <a href="#writing">Writing</a>
+    <a href="#learning">Learning</a>
+    <a href="#music">Music</a>
+    <a href="#journal">Journal</a>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>✧ Welcome to my world</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>☾ A quiet corner</h3>
+          <p>A place for thoughts, imagination, little discoveries, and ideas that deserve room to grow.</p>
+        </article>
+        <article class="card">
+          <h3>✎ Current inspiration</h3>
+          <p>Moonlit oceans, old poetry, mysterious forests, microscopic worlds, and the beauty of ordinary things.</p>
+        </article>
+        <article class="card">
+          <h3>✦ A reminder</h3>
+          <p>You don't need to have everything figured out. Every small step is still a step forward.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>☾ About this space</h2>
+      <div class="card">
+        <p>I'm a creative soul who loves art, writing, photography, classical music, languages, and science.</p>
+        <p>I'm especially interested in microbiology, human behavior, Shakespeare, and the little details that make the world fascinating.</p>
+        <p><em>Creative. Calm. Ambitious. Resilient.</em></p>
+      </div>
+    </section>
+
+    <section id="art">
+      <h2>✧ The art room</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Drawing & painting</h3>
+          <p>Anime, animals, nature, and cityscapes.</p>
+        </article>
+        <article class="card">
+          <h3>Photography</h3>
+          <p>People, houses, landscapes, and fleeting moments worth keeping.</p>
+        </article>
+        <article class="card">
+          <h3>Inspiration board</h3>
+          <p>Foggy forests · Purple flowers · Starry skies · Ocean at night</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="writing">
+      <h2>✎ The writing library</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Ashes of Tomorrow</h3>
+          <p>A science-fiction story exploring survival, uncertainty, and humanity after collapse.</p>
+        </article>
+        <article class="card">
+          <h3>My Summer Ends With You</h3>
+          <p>A story in progress, waiting to become what it was meant to be.</p>
+        </article>
+        <article class="card">
+          <h3>Poetry & literature</h3>
+          <p>Shakespeare, Sonnet 18, A Midsummer Night's Dream, and original poems.</p>
+        </article>
+      </div>
+      <div class="card">
+        <h3>✧ A place to write</h3>
+        <label for="writingTitle">Title</label>
+        <input id="writingTitle" placeholder="Give your idea a name">
+        <label for="writingText">Your draft</label>
+        <textarea id="writingText" placeholder="Begin anywhere..."></textarea>
+        <button type="button" onclick="saveDraft()">Save draft on this device</button>
+        <div id="draftStatus" class="small" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="learning">
+      <h2>⚝ The learning observatory</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Microbiology</h3>
+          <p>Study microorganisms, pathogens, specimen types, Gram staining, PCR, and laboratory testing.</p>
+        </article>
+        <article class="card">
+          <h3>Human behavior</h3>
+          <p>Explore psychology, behavior, communication, and how people learn.</p>
+        </article>
+        <article class="card">
+          <h3>Languages</h3>
+          <p>French · Korean · American Sign Language</p>
+        </article>
+        <article class="card">
+          <h3>Philosophy</h3>
+          <p>Ask questions, examine evidence, challenge assumptions, and think carefully.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="music">
+      <h2>♫ The music room</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Instruments</h3>
+          <p>Clarinet · Piano · Violin</p>
+        </article>
+        <article class="card">
+          <h3>Listening atmosphere</h3>
+          <p>Classical compositions, quiet piano, rain sounds, and music for writing.</p>
+        </article>
+      </div>
+      <p class="small">This section is a personal music corner; it does not play audio yet.</p>
+    </section>
+
+    <section id="journal">
+      <h2>☽ The private journal</h2>
+      <div class="card">
+        <p>Use this space for reflections, plans, or thoughts you want to keep on this device.</p>
+        <label for="journalDate">Date</label>
+        <input id="journalDate" type="date">
+        <label for="journalText">Your entry</label>
+        <textarea id="journalText" placeholder="Write freely..."></textarea>
+        <button type="button" onclick="saveJournal()">Save entry on this device</button>
+        <div id="journalStatus" class="small" aria-live="polite"></div>
+      </div>
+      <p class="small">Privacy note: entries are stored in this browser, not in a secure online account. Avoid entering sensitive personal information, and be careful on shared devices.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>✦ Ethereal Nicole ✦</p>
+    <p>Believe in yourself, and keep becoming.</p>
+  </footer>
+
+  <script>
+    function saveDraft() {
+      const title = document.getElementById("writingTitle").value;
+      const body = document.getElementById("writingText").value;
+      try {
+        localStorage.setItem("etherealNicoleDraft", JSON.stringify({ title, body }));
+        document.getElementById("draftStatus").textContent = "Draft saved in this browser.";
+      } catch (error) {
+        document.getElementById("draftStatus").textContent = "Could not save here. Please copy your draft somewhere safe.";
+      }
+    }
+
+    function saveJournal() {
+      const date = document.getElementById("journalDate").value;
+      const body = document.getElementById("journalText").value;
+      const status = document.getElementById("journalStatus");
+
+      if (!date || !body.trim()) {
+        status.textContent = "Please enter a date and some text first.";
+        return;
+      }
+
+      try {
+        const entries = JSON.parse(localStorage.getItem("etherealNicoleJournal") || "{}");
+        entries[date] = body;
+        localStorage.setItem("etherealNicoleJournal", JSON.stringify(entries));
+        status.textContent = "Entry saved in this browser.";
+      } catch (error) {
+        status.textContent = "Could not save here. Please copy your entry somewhere safe.";
+      }
+    }
+
+    document.getElementById("journalDate").valueAsDate = new Date();
+
+    try {
+      const savedDraft = JSON.parse(localStorage.getItem("etherealNicoleDraft") || "null");
+      if (savedDraft) {
+        document.getElementById("writingTitle").value = savedDraft.title || "";
+        document.getElementById("writingText").value = savedDraft.body || "";
+      }
+
+      const today = new Date().toISOString().slice(0, 10);
+      document.getElementById("journalDate").value = today;
+      const entries = JSON.parse(localStorage.getItem("etherealNicoleJournal") || "{}");
+      document.getElementById("journalText").value = entries[today] || "";
+    } catch (error) {
+      // Storage may be unavailable in restricted browser contexts.
+    }
+  </script>
+</body>
+</html>
